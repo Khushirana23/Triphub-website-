@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trip Hub - Your premium travel partner. Explore the world's most stunning destinations with expert-guided tours, unbeatable prices, and unforgettable experiences.">
+  <title>Trip Hub | Explore the World with Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader-wrap" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">Trip<span>Hub</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#packages">Packages</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <button class="btn-book" id="bookNowBtn">Book Now</button>
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Explore the <span>World</span> with Us</h1>
+      <p>Discover breathtaking destinations, curated travel packages, and unforgettable experiences crafted by our expert guides.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" id="heroCta">Start Your Journey</button>
+        <a href="#destinations" class="btn-outline">View Destinations</a>
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots">
+      <span class="active" data-index="0"></span>
+      <span data-index="1"></span>
+      <span data-index="2"></span>
+      <span data-index="3"></span>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="section" id="destinations">
+    <div class="section-header">
+      <h2>Popular Destinations</h2>
+      <p>Handpicked destinations that promise extraordinary experiences and lifelong memories</p>
+      <div class="line"></div>
+    </div>
+    <div class="destinations-grid">
+      <div class="dest-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80" alt="Paris">
+          <span class="price-tag">From $899</span>
+        </div>
+        <div class="card-body">
+          <h3>Paris, France</h3>
+          <p>The City of Light awaits with iconic landmarks, world-class cuisine, and timeless romance around every cobblestone corner.</p>
+          <a href="#" class="btn-details">View Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80" alt="Dubai">
+          <span class="price-tag">From $1,199</span>
+        </div>
+        <div class="card-body">
+          <h3>Dubai, UAE</h3>
+          <p>Experience futuristic architecture, luxury shopping, golden deserts, and a skyline that redefines modern grandeur.</p>
+          <a href="#" class="btn-details">View Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali">
+          <span class="price-tag">From $749</span>
+        </div>
+        <div class="card-body">
+          <h3>Bali, Indonesia</h3>
+          <p>Tropical paradise of lush rice terraces, ancient temples, pristine beaches, and vibrant cultural traditions.</p>
+          <a href="#" class="btn-details">View Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80" alt="Switzerland">
+          <span class="price-tag">From $1,499</span>
+        </div>
+        <div class="card-body">
+          <h3>Switzerland</h3>
+          <p>Majestic Alpine landscapes, pristine lakes, charming villages, and world-renowned chocolate and watches.</p>
+          <a href="#" class="btn-details">View Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80" alt="Maldives">
+          <span class="price-tag">From $1,899</span>
+        </div>
+        <div class="card-body">
+          <h3>Maldives</h3>
+          <p>Crystal-clear turquoise waters, overwater villas, vibrant coral reefs, and the ultimate tropical escape.</p>
+          <a href="#" class="btn-details">View Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80" alt="Goa">
+          <span class="price-tag">From $499</span>
+        </div>
+        <div class="card-body">
+          <h3>Goa, India</h3>
+          <p>Sun-kissed beaches, vibrant nightlife, Portuguese heritage, and a laid-back coastal charm like no other.</p>
+          <a href="#" class="btn-details">View Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="section" id="packages" style="background:var(--bg-alt);">
+    <div class="section-header">
+      <h2>Travel Packages</h2>
+      <p>Premium curated packages designed for every type of traveler</p>
+      <div class="line"></div>
+    </div>
+    <div class="packages-grid">
+      <div class="pkg-card">
+        <h3>Solo Adventure</h3>
+        <p class="pkg-duration"><i class="fas fa-clock"></i> 7 Days / 6 Nights</p>
+        <div class="pkg-price">
+          <h4>$1,299</h4>
+          <span>per person</span>
+        </div>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Flight Tickets Included</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>4-Star Hotel Stay</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>City Tours & Guides</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Adventure Activities</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Travel Insurance</li>
+        </ul>
+        <button class="btn-pkg" onclick="openPopup('Solo Adventure')">Book Package</button>
+      </div>
+      <div class="pkg-card featured">
+        <div class="badge">Popular</div>
+        <h3>Family Vacation</h3>
+        <p class="pkg-duration"><i class="fas fa-clock"></i> 10 Days / 9 Nights</p>
+        <div class="pkg-price">
+          <h4>$3,499</h4>
+          <span>per family (4)</span>
+        </div>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check" style="color:rgba(255,255,255,0.8);margin-right:8px;"></i>Round-Trip Flights</li>
+          <li><i class="fas fa-check" style="color:rgba(255,255,255,0.8);margin-right:8px;"></i>5-Star Resort Stay</li>
+          <li><i class="fas fa-check" style="color:rgba(255,255,255,0.8);margin-right:8px;"></i>Kids Activities & Club</li>
+          <li><i class="fas fa-check" style="color:rgba(255,255,255,0.8);margin-right:8px;"></i>All Meals Included</li>
+          <li><i class="fas fa-check" style="color:rgba(255,255,255,0.8);margin-right:8px;"></i>Private Transfers</li>
+        </ul>
+        <button class="btn-pkg" onclick="openPopup('Family Vacation')">Book Package</button>
+      </div>
+      <div class="pkg-card">
+        <h3>Honeymoon Special</h3>
+        <p class="pkg-duration"><i class="fas fa-clock"></i> 8 Days / 7 Nights</p>
+        <div class="pkg-price">
+          <h4>$2,799</h4>
+          <span>per couple</span>
+        </div>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Luxury Suite Stay</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Candlelight Dinners</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Spa & Wellness</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Sunset Cruise</li>
+          <li><i class="fas fa-check" style="color:var(--primary);margin-right:8px;"></i>Couple Photography</li>
+        </ul>
+        <button class="btn-pkg" onclick="openPopup('Honeymoon Special')">Book Package</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="about-wrap">
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" alt="About Trip Hub">
+        <div class="exp-badge">
+          <h4>12+</h4>
+          <span>Years Experience</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>Why Choose <span style="color:var(--primary)">Trip</span><span style="color:var(--accent)">Hub</span>?</h2>
+        <p>Since 2014, Trip Hub has been crafting extraordinary travel experiences for explorers worldwide. We believe every journey should be seamless, memorable, and uniquely yours.</p>
+        <p>Our team of passionate travel experts works tirelessly to bring you the best destinations, accommodations, and experiences at unbeatable prices — all backed by our commitment to safety and excellence.</p>
+        <div class="about-features">
+          <div class="about-feat">
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+            <div><h4>Trusted & Safe</h4><p>Verified partners & 24/7 support</p></div>
+          </div>
+          <div class="about-feat">
+            <div class="icon"><i class="fas fa-tags"></i></div>
+            <div><h4>Best Prices</h4><p>Price match guarantee always</p></div>
+          </div>
+          <div class="about-feat">
+            <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+            <div><h4>Expert Guides</h4><p>Local experts at every stop</p></div>
+          </div>
+          <div class="about-feat">
+            <div class="icon"><i class="fas fa-headset"></i></div>
+            <div><h4>24/7 Support</h4><p>Always here when you need us</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials" id="testimonials">
+    <div class="section-header">
+      <h2>What Our Travelers Say</h2>
+      <p>Real stories from real adventurers who trusted us with their journeys</p>
+      <div class="line"></div>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"Trip Hub made our family vacation absolutely magical. From the seamless booking to the incredible resort, every detail was perfect. We're already planning our next trip!"</p>
+        <div class="reviewer">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah Johnson">
+          <div><h4>Sarah Johnson</h4><span>Family Trip to Bali</span></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"The honeymoon package was beyond our wildest dreams. The overwater villa in the Maldives, the private dinners — pure romance. Thank you, Trip Hub!"</p>
+        <div class="reviewer">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James Mitchell">
+          <div><h4>James Mitchell</h4><span>Honeymoon in Maldives</span></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"As a solo traveler, I was nervous about my first big trip. Trip Hub's guides were phenomenal — I felt safe, inspired, and completely free. Best decision ever!"</p>
+        <div class="reviewer">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Emily Chen">
+          <div><h4>Emily Chen</h4><span>Solo Adventure in Switzerland</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <h2>Get in Touch</h2>
+      <p>Ready to plan your dream vacation? We'd love to hear from you</p>
+      <div class="line"></div>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <h2>Let's Plan Your Next Adventure</h2>
+        <p>Reach out to our travel experts and we'll craft the perfect itinerary tailored to your dreams, budget, and schedule.</p>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><h4>Our Office</h4><span>123 Travel Street, New York, NY 10001</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div><h4>Phone</h4><span>+1 (555) 123-4567</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div><h4>Email</h4><span>hello@triphub.com</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-clock"></i></div>
+          <div><h4>Working Hours</h4><span>Mon – Sat: 9:00 AM – 7:00 PM</span></div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination Interested In</label>
+          <select id="destination">
+            <option value="">Select a destination</option>
+            <option>Paris, France</option>
+            <option>Dubai, UAE</option>
+            <option>Bali, Indonesia</option>
+            <option>Switzerland</option>
+            <option>Maldives</option>
+            <option>Goa, India</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us about your dream trip..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Trip<span>Hub</span></h3>
+        <p>Your trusted travel partner since 2014. We craft unforgettable journeys to the world's most breathtaking destinations with expertise, passion, and care.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h3>Top Destinations</h3>
+        <a href="#">Paris, France</a>
+        <a href="#">Dubai, UAE</a>
+        <a href="#">Bali, Indonesia</a>
+        <a href="#">Maldives</a>
+        <a href="#">Switzerland</a>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">Help Center</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Trip Hub | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Booking Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <button class="popup-close" id="popupClose">&times;</button>
+      <h2>Book Your Trip</h2>
+      <p id="popupSubtitle">Fill in your details and we'll get back to you within 24 hours.</p>
+      <form id="popupForm">
+        <div class="form-group">
+          <label for="popupName">Full Name</label>
+          <input type="text" id="popupName" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="popupEmail">Email Address</label>
+          <input type="email" id="popupEmail" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="popupDest">Preferred Destination</label>
+          <select id="popupDest">
+            <option value="">Select a destination</option>
+            <option>Paris, France</option>
+            <option>Dubai, UAE</option>
+            <option>Bali, Indonesia</option>
+            <option>Switzerland</option>
+            <option>Maldives</option>
+            <option>Goa, India</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="popupDate">Travel Date</label>
+          <input type="date" id="popupDate">
+        </div>
+        <button type="submit" class="btn-submit">Confirm Booking <i class="fas fa-check"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
